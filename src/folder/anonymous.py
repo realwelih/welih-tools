@@ -35,7 +35,8 @@ def anonymous_hello():
 	if(inputid=="1"):
 		os.system("sudo nano /etc/resolv.conf  ")
 	if(inputid=="2"):
-		os.system("sudo openvpn /home/kali/Desktop/tools/src/component/vecihi.ovpn ")
+		inputname =input(" Enter Name of VPN : ")
+		os.system(f"sudo openvpn vpn/{inputname}.ovpn")
 	if(inputid=="3"):
 		os.system("sudo macchanger -r eth0")
 	if(inputid=="4"):
